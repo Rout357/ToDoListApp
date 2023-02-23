@@ -14,7 +14,8 @@
 
     <style>
         body{
-            background-color: #f2f2f2;
+            background-color: #23272a;
+            color: #fff;
             font-family: 'Nunito', sans-serif;
             padding-top: 50px;
         }
@@ -24,7 +25,7 @@
         }
 
         a, p {
-            color: #4b5156;
+            color: #1abc9c;
         }
 
         a {
@@ -34,9 +35,9 @@
         .container {
             max-width: 550px;
             margin: auto;
-            background-color: #fff;
+            background-color: #2c2f33;
             -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.5);
         }
 
         input {
@@ -62,19 +63,21 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #fff;
+            background-color: #2c2f33;
+            color: #fff;
             border-top: 1px solid #dfe4ea;
             overflow: hidden;
         }
 
         .task-title {
+            color: #fff;
             display: flex;
             padding: 20px;
         }
 
         .task-title a {
             text-decoration: none;
-            color: #4b5156;
+            color: #737a80;
             margin-left: 10px;
         }
 
@@ -95,10 +98,10 @@
         .delete-link {
             text-decoration: none;
             font-weight: 900;
-            color: #cf4949;
+            color: #e74c3c;
             font-size: 22px;
             line-height: 2;
-            padding: 20px 0px;
+            padding: 10px 15px;
         }
 
         .handle {
@@ -127,17 +130,21 @@
         }
 
         .selectedTask {
+            background-color: #418e23;
+            color: #fff;
             opacity: 0.6;
         }
 
         #add-link {
-            color: #EB796F;
+            color: #418e23;
             text-decoration: none;
             font-size: 42px;
-            text-shadow: 1px 1px #81413b;
+            text-shadow: 1px 1px #418e23;
         }
 
         #search-add-wrapper {
+            background-color: #2c2f33;
+            color: #fff;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -153,10 +160,18 @@
         input[type=text],
         input[type=password],
         textarea {
-            border: 1px solid #757575;
+            background-color: #23272a;
+            color: #fff;
+            border: none;
             border-radius: 5px;
             padding: 10px;
             width: 90%;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        textarea:focus {
+            outline: none;
         }
 
         label {
@@ -170,9 +185,9 @@
         }
 
         .button {
-            border: 1px solid #757575;
-            background-color: #FFF;
-            color: #EB796F;
+            border: none;
+            background-color: #418e23;
+            color: #fff;
             padding: 10px;
             font-size: 14px;
             border-radius: 5px;
@@ -181,6 +196,8 @@
         }
 
         .card-body {
+            background-color: #2c2f33;
+            color: #fff;
             padding: 20px;
         }
 
@@ -191,9 +208,7 @@
 <body>
 
     <div class="container">
-        {% block content %}
-
-        {% endblock content %}
+        {% block content %} {% endblock content %}
     </div>
 
 </body>
